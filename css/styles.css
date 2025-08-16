@@ -9,6 +9,9 @@ body {
     color: #434455;
     line-height: 1.5;
 }
+.st::after {
+    text-decoration: underline;
+}
 
 header {
     width: 100%;
@@ -55,14 +58,34 @@ ul li {
 .hero {
     width: 100%;
     height: 600px;
-    background-color: #2E2F42;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;    
     text-align: center;
+    overflow: hidden;
+    
 }
+.hero-image {
+    width: 100%;
+    height: 100%;
+} 
+
+.hero-title {
+    width: 1158px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(46, 47, 66, 0.7);
+    position: absolute;
+}
+.button {
+    position: absolute;
+    bottom: 50%
+}
+
+
 
 h1 {
     font-weight: 700;
@@ -81,16 +104,8 @@ button {
     cursor: pointer;
 }
 
-.categories {
-    width: 80%;
-    height: 300px;
-    
-    margin: 0 auto;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .team {
     background-color: #F4F4FD;
@@ -104,6 +119,7 @@ button {
     height: 732px;
     
 }
+
 
 .teamcontent {
     height: 120px;
@@ -195,3 +211,61 @@ a {
     max-width: 1158px;
     margin: 0 auto;   
 }
+
+
+.social img {
+    width: Hug(232p)x;
+    height: Hug(40px);
+    gap: 24px;
+}
+
+.categories-list {
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  width: 80%;
+height: 300px;
+display: flex;
+align-items: center;
+padding-left: 250px;
+}
+
+.category-item-container {
+  text-align: left;
+}
+
+
+.icon-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 264px;
+  height: 112px; 
+  background-color: #F4F4FD; 
+  border-radius: 4px; 
+  margin-bottom: 8px; 7
+  border: 1px solid rgba(142, 143, 153, 1);
+}
+
+
+.category-item-container h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 8px; 
+  margin-top: 0;
+}
+
+
+.category-item-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #434455;
+  margin: 0;
+}
+.st:hover {
+    text-decoration: underline;
+}
+
+
