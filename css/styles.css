@@ -9,9 +9,8 @@ body {
     color: #434455;
     line-height: 1.5;
 }
-.st::after {
-    text-decoration: underline;
-}
+
+
 
 header {
     width: 100%;
@@ -264,8 +263,8 @@ padding-left: 250px;
   color: #434455;
   margin: 0;
 }
-.st:hover {
-    text-decoration: underline;
+
+.end {
+    display: flex;
+    gap: 8px;
 }
-
-
