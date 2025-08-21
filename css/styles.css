@@ -149,7 +149,6 @@ button {
     margin-bottom: 80px;
     display: flex;
     justify-content: space-evenly;
-    justify-content: flex-start
     align-items: center;
     flex-direction: column;
     gap: 60px;
@@ -169,7 +168,6 @@ button {
     display: flex;
     justify-content: flex-start;
 }
-    
 
 
  .content {
