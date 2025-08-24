@@ -30,6 +30,45 @@ address ul li a:hover {
 button:hover {
     background-color: #404BBF;
 }
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* menü elemanları arası boşluk */
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+/* Alt çizgi */
+.menu li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #404BBF;
+    transition: width 0.3s ease;
+}
+
+/* Hover olduğunda çizgi gelsin */
+.menu li a:hover::after {
+    width: 100%;
+}
+
+/* Aktif olan menüde çizgi sürekli kalsın */
+.menu li.active a::after {
+    width: 100%;
+}
+
 
 .logo {
     font-size: 18px;
@@ -298,33 +337,35 @@ a {
 .normal {
     width: 360px;
     height: 300px;
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
-
 .normal img {
     display: block;
-   width: 360px;
-   height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .normal .hover {
-    background-color: rgba(77, 90, 229, 1);
-    display: flex;
     position: absolute;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
     inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #404BBF;
+    color: #fff;
     transform: translateY(100%);
     transition: transform 250ms ease;
-}
 
+}
 .normal:hover .hover {
     transform: translateY(0);
 }
-.hover {
-    display: none;
-    background-color: rgba(77, 90, 229, 1);
-    position: absolute;
+
+.menu li.active a::after {
+  width: 100%;
 }
+
+
+    
+
